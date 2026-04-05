@@ -1,3 +1,4 @@
+import { API_URL } from '../../config';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet } from '@angular/router';
@@ -429,7 +430,7 @@ export class LayoutComponent implements OnInit {
 
   getImgUrl(path?: string | null): string {
     if (!path) return '';
-    return path.startsWith('http') ? path : `http://localhost:5001${path}`;
+    return path.startsWith('http') ? path : `${API_URL}${path}`;
   }
 
   getUserFirstName(): string {

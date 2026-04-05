@@ -1,1 +1,135 @@
-<p>landing works!</p>
+<div class="landing-page">
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <span>AttendEase SaaS</span>
+    </div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it Works</a>
+      <a href="#pricing">Pricing</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-text" (click)="goToLogin()">Log In</button>
+      <button class="btn-primary" (click)="goToSignup()">Start Free Trial</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="badge">✨ Join 10,000+ Institutions</div>
+      <h1>Intelligent Attendance Management for Modern Institutions</h1>
+      <p>Automate your classroom tracking, receive real-time insights, and connect seamlessly with students using our advanced, AI-ready platform.</p>
+      <div class="hero-actions">
+        <button class="btn-primary-large" (click)="goToSignup()">Get Started Now</button>
+        <button class="btn-secondary-large" (click)="scrollToPricing()">View Pricing</button>
+      </div>
+      <div class="trust-indicators">
+        <span>🔒 No credit card required</span>
+        <span>⚡ 14-day free trial</span>
+        <span>🌍 Cancel anytime</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <!-- Decorative UI Mockup -->
+      <div class="mockup-container">
+        <div class="mockup-header">
+          <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+        </div>
+        <div class="mockup-body">
+          <div class="chart-skeleton"></div>
+          <div class="list-skeleton">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Decorative Blobs -->
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+  </header>
+
+  <section id="pricing" class="pricing">
+    <div class="section-header">
+      <h2>Simple, Transparent Pricing</h2>
+      <p>Choose the right plan for your institution. Scale as you grow.</p>
+    </div>
+    <div class="pricing-cards">
+      <div class="card">
+        <h3>Starter</h3>
+        <div class="price"><span>$</span>29<span>/mo</span></div>
+        <p>Perfect for small tutoring centers and independent educators.</p>
+        <ul>
+          <li>✔️ Up to 100 Students</li>
+          <li>✔️ 1 Admin Account</li>
+          <li>✔️ Basic Reporting</li>
+          <li>✔️ Email Support</li>
+        </ul>
+        <button class="btn-outline" (click)="goToSignup()">Start Free Trial</button>
+      </div>
+      <div class="card premium">
+        <div class="popular-badge">Most Popular</div>
+        <h3>Professional</h3>
+        <div class="price"><span>$</span>99<span>/mo</span></div>
+        <p>Ideal for growing schools and specialized academies.</p>
+        <ul>
+          <li>✔️ Up to 1,000 Students</li>
+          <li>✔️ 10 Admin/Teacher Accounts</li>
+          <li>✔️ Advanced Analytics</li>
+          <li>✔️ WhatsApp & Email Alerts</li>
+          <li>✔️ Priority Support</li>
+        </ul>
+        <button class="btn-primary" (click)="goToSignup()">Start Free Trial</button>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <div class="price"><span>$</span>299<span>/mo</span></div>
+        <p>For universities and large educational districts.</p>
+        <ul>
+          <li>✔️ Unlimited Students</li>
+          <li>✔️ Unlimited Teacher Accounts</li>
+          <li>✔️ Custom Integrations & API</li>
+          <li>✔️ Dedicated Account Manager</li>
+          <li>✔️ White-labeling Options</li>
+        </ul>
+        <button class="btn-outline" (click)="goToSignup()">Contact Sales</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="brand">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          <span>AttendEase SaaS</span>
+        </div>
+        <p>Streamlining education administration worldwide.</p>
+      </div>
+      <div class="links">
+        <div class="col">
+          <h4>Product</h4>
+          <a href="#">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#">Changelog</a>
+        </div>
+        <div class="col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      &copy; 2026 AttendEase SaaS Inc. All rights reserved.
+    </div>
+  </footer>
+</div>

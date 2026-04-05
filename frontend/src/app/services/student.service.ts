@@ -1,3 +1,4 @@
+import { API_URL } from '../config';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -5,7 +6,7 @@ import { Student } from '../models/models';
 
 @Injectable({ providedIn: 'root' })
 export class StudentService {
-  private readonly API = 'http://localhost:5001/api/students';
+  private readonly API = API_URL + '/api/students';
 
   constructor(private http: HttpClient) {}
 

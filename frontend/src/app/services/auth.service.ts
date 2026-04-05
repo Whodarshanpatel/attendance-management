@@ -1,3 +1,4 @@
+import { API_URL } from '../config';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
@@ -6,7 +7,7 @@ import { User, AuthResponse } from '../models/models';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  private readonly API = 'http://localhost:5001/api/auth';
+  private readonly API = API_URL + '/api/auth';
   private currentUserSubject = new BehaviorSubject<User | null>(this.loadUser());
   currentUser$ = this.currentUserSubject.asObservable();
 

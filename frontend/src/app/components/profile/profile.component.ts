@@ -1,3 +1,4 @@
+import { API_URL } from '../../config';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -239,7 +240,7 @@ export class ProfileComponent implements OnInit {
   // Add timestamp to bust browser cache after upload
   getImgUrl(path?: string | null): string {
     if (!path) return '';
-    const base = path.startsWith('http') ? path : `http://localhost:5001${path}`;
+    const base = path.startsWith('http') ? path : `${API_URL}${path}`;
     return `${base}?t=${Date.now()}`;
   }
 }
